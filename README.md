@@ -5,14 +5,13 @@ Run with `python gui.py`.
 
 INTRODUCTION
 ------------
-This bot uses a Python package 'tweepy' to connect with Twitter's APIs. While this bot could be ran extremely fast by removing all sleep commands from the 'time' package, these are in place to slow down the program in order to avoid being banned from Twitter by making a large amount of follow requests to its API. Please proceed with caution changing these settings as this is what I have found to be most effective, especially when ran continously on a cloud server. This program first gathers a list of the user IDs of a given account in accounts and follows their followers by this ID.
 
 REQUIREMENTS
 ------------
-All requirements for this package are included in the file 'requirements.txt' in this directory.
+All requirements for this package are included in the file 'requirements.txt.'
 
-Installation with pip. Must be in twitter_follow_bot/requirements.txt.  
-`pip install -r requirements.txt`
+Installation with pip. Must be in /python_roku_remote/    
+`pip install -r requirements.txt`  
 
 USAGE
 -------------
@@ -32,10 +31,11 @@ CONFIGURATION
 -------------
 
 ### Roku IP Configuration:  
-**required**  
+**Required**  
+  
 Configure the IP address of your Roku in rokutest.py with your Roku's IP.   
 Edit rokutest.py's value `ROKU_IP_ADDRESS`  
-
+  
 Help: 
 The easiest way to locate this is on your Roku device. If you know the name of your Roku device on the network, you may also look it up by viewing devices connected to your network on a computer.
 On your Roku device, goto Settings -> Network.
