@@ -1,4 +1,4 @@
-# python_roku_remote
+# Python GUI Roku Remote
 Python Roku Remote with PyQt6
 
 Install into desired directory 
