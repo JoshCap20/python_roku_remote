@@ -5,7 +5,7 @@ Run with `python gui.py`.
 
 FEATURES
 ------------
-- Navigate between channels and different inputs. Preconfigured: HDMI 2 as Xbox, Home.  
+- Navigate between channels and different inputs. Preconfigured: Live TV, HDMI 2, Xbox, Home.  
 - Switch and launch Roku applications. Preconfigured: Netflix, Hulu, Disney Plus, HBO Max, Peacock, Spotify.  
 - Control Roku navigation and volume. Preconfigured: Home, Volume Up, Volume Down, Power Off, Up, Down, Right, Left, Select.  
 - Automate a set of actions to a single button for quick, easy usage. Preconfigured: Workaholics, Game of Thrones, Modern Family, Southpark, Recent Spotify Playlist.  
@@ -85,8 +85,8 @@ Install pyinstaller with Pip:
   
 Run pyinstaller:  
   
-For singe-file executable with hidden console:  
-`pyinstaller --onefile --windowed gui.py`  
+For singe-file executable with hidden console and Roku app icon:  
+`pyinstaller --onefile --windowed --icon=rokuicon.ico gui.py`  
 For simple use:  
 `pyinstaller gui.py`  
 
