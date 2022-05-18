@@ -3,7 +3,7 @@ from time import sleep
 import requests
 
 #find roku on mac: ipconfig, arp -a, find name
-ROKU_IP_ADDRESS: str = "VALUE HERE"
+ROKU_IP_ADDRESS: str = "192.168.106.244"
 
 roku = Roku(ROKU_IP_ADDRESS)
 
@@ -81,7 +81,7 @@ def home():
 
 def select():
     roku.select()
-    sleep(2)
+    sleep(2.5)
 
 def get_active():
     print(roku.active_app)
@@ -159,55 +159,44 @@ def hulu_search():
 
 def southpark():
     hbo_max_search()
-    remote_down(3)
-    select()
-    remote_right(2)
-    remote_up()
-    select()
-    remote_down(1)
-    select()
-    remote_right(4)
-    select()
+    for char in "southpark":
+        letter(char)
     if start:
         select()
 
 def modernfamily():
     hulu_search()
-    remote_down(2)
+    for char in "modern family":
+        letter(char)
+    # remote_down(2)
+    # select()
+    # remote_right(2)
+    # select()
+    # remote_up(2)
+    # remote_right(1)
+    # select()
+    remote_right(6)
     select()
-    remote_right(2)
-    select()
-    remote_up(2)
-    remote_right(1)
-    select()
-    remote_right(3)
-    select()
+    # select()
     if start:
         select()
         select()
 
 def workaholics():
     hulu_search()
-    remote_right(4)
-    remote_down(3)
-    select()
-    remote_left(2)
-    remote_up(1)
-    select()
-    remote_right(3)
-    select()
-    remote_right(1)
+    for char in "worka":
+        letter(char)
+    remote_right(6)
     select()
     if start:
-        select()
         select()
 
 
 def game_of_thrones():
     hbo_max_search()
 
-def letter_r():
-    requests.post(f"http://{ROKU_IP_ADDRESS}:8060/keypress/Lit_r")
+def letter(x):
+    requests.post(f"http://{ROKU_IP_ADDRESS}:8060/keypress/Lit_{x}")
 
 def volume_down():
     requests.post(f'http://{ROKU_IP_ADDRESS}:8060/keypress/volumeDown')
@@ -222,6 +211,7 @@ def music():
     spotify = roku['Spotify Music']
     spotify.launch()
     sleep(10)
+    select()
     select()
     if start:
         select()
