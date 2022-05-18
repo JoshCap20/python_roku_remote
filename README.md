@@ -10,17 +10,37 @@ FEATURES
 - Control Roku navigation and volume. Preconfigured: Home, Volume Up, Volume Down, Power Off, Up, Down, Right, Left, Select.  
 - Automate a set of actions to a single button for quick, easy usage. Preconfigured: Workaholics, Game of Thrones, Modern Family, Southpark, Recent Spotify Playlist.  
   
-**Button Map**
-Channels/Inputs
 
+BUTTON MAP  
+------------
+**Remote Features**   
+Power Off  
+Home  
+Select  
+Up  
+Down  
+Right  
+Left  
+Volume Up  
+Volume Down  
+  
+**Channels/Inputs**  
+Xbox  
+Netflix  
+Hulu  
+Disney Plus  
+HBO Max  
+  
      
-Shows for quick access
-       
-
-Remote features
-       
-
-Other
+**Shows for quick access**  
+Southpark  
+Modern Family  
+Game of Thrones  
+Workaholics  
+      
+  
+**Other**  
+Spotify Recent Playlist  
        
 
 REQUIREMENTS
