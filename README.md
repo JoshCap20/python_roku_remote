@@ -36,9 +36,9 @@ CONFIGURATION
 Configure the IP address of your Roku in rokutest.py with your Roku's IP.   
 Edit rokutest.py's value `ROKU_IP_ADDRESS`  
   
-Help: 
-The easiest way to locate this is on your Roku device. If you know the name of your Roku device on the network, you may also look it up by viewing devices connected to your network on a computer.
-On your Roku device, goto Settings -> Network.
+Help:  
+The easiest way to locate this is on your Roku device. If you know the name of your Roku device on the network, you may also look it up by viewing devices connected to your network on a computer.  
+On your Roku device, navigate to Settings -> Networking -> About. The IP address assigned to the Roku should be displayed underneath the network name. If you have the Roku app, you can also access this by tapping the gear icon and then viewing 'System Info.'   
 On Mac, try 'ifconfig' and 'arp -a' in a terminal shell to locate your device's name and IP address on your network.  
 
 
