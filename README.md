@@ -8,9 +8,7 @@ INTRODUCTION
 
 REQUIREMENTS
 ------------
-All requirements for this package are included in the file 'requirements.txt.'
-
-Installation with pip. Must be in /python_roku_remote/    
+All requirements for this package are included in the file 'requirements.txt.' Must be in /python_roku_remote/    
 `pip install -r requirements.txt`  
 
 USAGE
@@ -49,6 +47,7 @@ Install pyinstaller with Pip:
 `pip install pyinstaller`  
   
 Run pyinstaller:  
+  
 For singe-file executable with hidden console:  
 `pyinstaller --onefile --windowed gui.py`  
 For simple use:  
