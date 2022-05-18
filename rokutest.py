@@ -3,7 +3,10 @@ from time import sleep
 import requests
 
 #find roku on mac: ipconfig, arp -a, find name
-roku = Roku('ROKU IP')
+ROKU_IP_ADDRESS: str = "VALUE HERE"
+
+roku = Roku(ROKU_IP_ADDRESS)
+
 
 start: bool = False
 hulu_login: bool = False
@@ -86,6 +89,22 @@ def get_active():
 def search_roku():
     roku.search()
     sleep(4)
+
+def right():
+    roku.right()
+    sleep(.5)
+
+def left():
+    roku.left()
+    sleep(.5)
+
+def up():
+    roku.up()
+    sleep(.5)
+
+def down():
+    roku.down()
+    sleep(.5)
 
 def remote_right(x=1):
     for i in range(x):
