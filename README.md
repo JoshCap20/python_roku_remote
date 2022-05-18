@@ -43,7 +43,18 @@ On Mac, try 'ifconfig' and 'arp -a' in a terminal shell to locate your device's 
 
 SUGGESTIONS
 ---------------
-I suggest using pyinstaller to install this python program as a stand-alone, executable app on your desktop for easiest usage.
+I suggest using pyinstaller to install this python program as a stand-alone, executable app on your desktop for easiest usage. I would publish the app this way, but I figured it was better to publish the python file to allow customization and improvement.    
+  
+Install pyinstaller with Pip:  
+’pip install pyinstaller’  
+  
+Run pyinstaller:  
+For singe-file executable with hidden console:  
+’pyinstaller --onefile --windowed gui.py’  
+For simple use:  
+’pyinstaller gui.py’  
+
+
 
 TROUBLESHOOTING
 ---------------
