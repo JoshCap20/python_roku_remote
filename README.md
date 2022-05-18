@@ -39,20 +39,20 @@ Edit rokutest.py's value `ROKU_IP_ADDRESS`
 Help:  
 The easiest way to locate this is on your Roku device. If you know the name of your Roku device on the network, you may also look it up by viewing devices connected to your network on a computer.  
 On your Roku device, navigate to Settings -> Networking -> About. The IP address assigned to the Roku should be displayed underneath the network name. If you have the Roku app, you can also access this by tapping the gear icon and then viewing 'System Info.'   
-On Mac, try 'ifconfig' and 'arp -a' in a terminal shell to locate your device's name and IP address on your network.  
+On Mac, try `ifconfig` and `arp -a` in a terminal shell to locate your device's name and IP address on your network.  
 
 SUGGESTIONS
 ---------------
 I suggest using pyinstaller to install this python program as a stand-alone, executable app on your desktop for easiest usage. I would publish the app this way, but I figured it was better to publish the python file to allow customization and improvement.    
   
 Install pyinstaller with Pip:  
-’pip install pyinstaller’  
+`pip install pyinstaller`  
   
 Run pyinstaller:  
 For singe-file executable with hidden console:  
-’pyinstaller --onefile --windowed gui.py’  
+`pyinstaller --onefile --windowed gui.py`  
 For simple use:  
-’pyinstaller gui.py’  
+`pyinstaller gui.py`  
 
 
 
