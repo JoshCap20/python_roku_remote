@@ -1,2 +1,2 @@
 # python_roku_remote
-Python Roku Remote with PyQt5
+Python Roku Remote with PyQt6
