@@ -207,16 +207,16 @@ def game_of_thrones():
     hbo_max_search()
 
 def letter_r():
-    requests.post("http://$ROKU_DEV_TARGET:8060/keypress/Lit_r")
+    requests.post(f"http://{ROKU_IP_ADDRESS}:8060/keypress/Lit_r")
 
 def volume_down():
-    requests.post('http://192.168.106.244:8060/keypress/volumeDown')
+    requests.post(f'http://{ROKU_IP_ADDRESS}:8060/keypress/volumeDown')
 
 def volume_up():
-    requests.post('http://192.168.106.244:8060/keypress/volumeUp')
+    requests.post(f'http://{ROKU_IP_ADDRESS}:8060/keypress/volumeUp')
 
 def power():
-    requests.post('http://192.168.106.244:8060/keypress/PowerOff')
+    requests.post(f'http://{ROKU_IP_ADDRESS}:8060/keypress/PowerOff')
 
 def music():
     spotify = roku['Spotify Music']
