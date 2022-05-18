@@ -3,8 +3,25 @@ This program is a graphical user interface that connects with and controls your 
 
 Run with `python gui.py`.
 
-INTRODUCTION
+FEATURES
 ------------
+- Navigate between channels and different inputs. Preconfigured: HDMI 2 as Xbox, Home.  
+- Switch and launch Roku applications. Preconfigured: Netflix, Hulu, Disney Plus, HBO Max, Peacock, Spotify.  
+- Control Roku navigation and volume. Preconfigured: Home, Volume Up, Volume Down, Power Off, Up, Down, Right, Left, Select.  
+- Automate a set of actions to a single button for quick, easy usage. Preconfigured: Workaholics, Game of Thrones, Modern Family, Southpark, Recent Spotify Playlist.  
+  
+**Button Map**
+Channels/Inputs
+
+     
+Shows for quick access
+       
+
+Remote features
+       
+
+Other
+       
 
 REQUIREMENTS
 ------------
