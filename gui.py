@@ -37,13 +37,19 @@ class Remote(QDialog):
         down = QPushButton('Down')
         right = QPushButton('Right')
         left = QPushButton('Left')
-        volup = QPushButton('Volume Up')
-        voldown = QPushButton('Volume Down')
+        #volup = QPushButton('Volume Up')
+        #voldown = QPushButton('Volume Down')
         poweroff = QPushButton('Power Off')
 
         # Other
         music = QPushButton('Music')
         start = QCheckBox('Start')
+        self.search = QLineEdit('Search')
+
+        # Search access
+        hulu_search = QPushButton('Hulu Search')
+        hbo_search = QPushButton('HBO Search')
+        search_button = QPushButton('OK', self)
 
         # Volume slider
         sld = QSlider(Qt.Orientation.Horizontal, self)
@@ -59,6 +65,7 @@ class Remote(QDialog):
 
         # Add each button to layout
         layout.addWidget(start)
+        
         layout.addWidget(poweroff)
         layout.addWidget(home)
         layout.addWidget(select)
@@ -66,8 +73,8 @@ class Remote(QDialog):
         layout.addWidget(down)
         layout.addWidget(right)
         layout.addWidget(left)
-        layout.addWidget(volup)
-        layout.addWidget(voldown)
+        #layout.addWidget(volup)
+        #layout.addWidget(voldown)
         layout.addWidget(xbox)
         layout.addWidget(netflix)
         layout.addWidget(hulu)
@@ -78,7 +85,12 @@ class Remote(QDialog):
         layout.addWidget(got)
         layout.addWidget(workaholics)
         layout.addWidget(music)
+        layout.addWidget(hulu_search)
+        layout.addWidget(hbo_search)
+        layout.addWidget(self.search)
+        layout.addWidget(search_button)
         layout.addWidget(sld)
+        
         
     
 
@@ -98,18 +110,27 @@ class Remote(QDialog):
         down.clicked.connect(roku.down)
         right.clicked.connect(roku.right)
         left.clicked.connect(roku.left)
-        volup.clicked.connect(roku.volume_up)
-        voldown.clicked.connect(roku.volume_down)
+        #volup.clicked.connect(roku.volume_up)
+        #voldown.clicked.connect(roku.volume_down)
         poweroff.clicked.connect(roku.power)
         music.clicked.connect(roku.music)
         start.stateChanged.connect(lambda:self.btnstate(start))
+
+        hulu_search.clicked.connect(roku.hulu_search)
+        hbo_search.clicked.connect(roku.hbo_max_search)
+        search_button.clicked.connect(self.clickMethod)
 
         # Window, Layout Options
         self.setWindowTitle("Remote")
         self.setLayout(layout)
 
+    def clickMethod(self):
+        print('Your search: ' + self.search.text())
+        #for char in self.search.text():
+           # roku.letter(char)
+        self.search.clear()
 
-    def changeValue(self, value):
+    def changeValue(self):
         initial_volume: int = 25
         volume_level = self.sender().value()
         if volume_level > initial_volume:
@@ -126,7 +147,6 @@ class Remote(QDialog):
       if start.text() == "Start":
          if start.isChecked() == True:
             roku.set_start()
-            roku.volume_up()
             print("Start selected")
          else:
             roku.set_start_off()

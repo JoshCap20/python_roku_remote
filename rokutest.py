@@ -2,8 +2,8 @@ from roku import Roku
 from time import sleep
 import requests
 
-#find roku on mac: arp -a, find name
-ROKU_IP_ADDRESS: str = "value here"
+#find roku on mac: ipconfig, arp -a, find name
+ROKU_IP_ADDRESS: str = "ROKU IP ADDRESS"
 
 roku = Roku(ROKU_IP_ADDRESS)
 
