@@ -1,5 +1,5 @@
 # GUI Roku Remote with PyQt6
-This program is a graphical user interface that connects with and controls your Roku.
+This program is a graphical user interface that connects with and controls your Roku. The interface is completely customizable to your preferences. I leave included sample buttons that demonstrate the ability to automate tasks.
 
 Run with `python gui.py`.
 
@@ -41,6 +41,9 @@ The easiest way to locate this is on your Roku device. If you know the name of y
 On your Roku device, navigate to Settings -> Networking -> About. The IP address assigned to the Roku should be displayed underneath the network name. If you have the Roku app, you can also access this by tapping the gear icon and then viewing 'System Info.'   
 On Mac, try 'ifconfig' and 'arp -a' in a terminal shell to locate your device's name and IP address on your network.  
 
+SUGGESTIONS
+---------------
+I suggest using pyinstaller to install this python program as a stand-alone, executable app on your desktop for easiest usage.
 
 TROUBLESHOOTING
 ---------------
