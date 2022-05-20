@@ -9,6 +9,9 @@ FEATURES
 - Switch and launch Roku applications. Preconfigured: Netflix, Hulu, Disney Plus, HBO Max, Peacock, Spotify.  
 - Control Roku navigation and volume. Preconfigured: Home, Volume Up, Volume Down, Power Off, Up, Down, Right, Left, Select.  
 - Automate a set of actions to a single button for quick, easy usage. Preconfigured: Workaholics, Game of Thrones, Modern Family, Southpark, Recent Spotify Playlist.  
+
+Beta version includes better search functionality by accessing the Roku via requests and typing directly instead of navigating onscreen keyboard.
+Hand_sensor_remote includes beta version in addition to a gestures checkbox that enables your webcamera to control volume on your television. With your right hand, an open hand turns up the volume, while a closed right hand turns down the volume. 
   
 
 BUTTON MAP  
