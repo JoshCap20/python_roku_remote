@@ -191,5 +191,7 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     remote = Remote()
+    print("Loading...")
     remote.show()
+    print("Loaded.")
     sys.exit(app.exec()) 

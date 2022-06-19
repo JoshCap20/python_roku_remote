@@ -1,11 +1,15 @@
 from roku import Roku
 from time import sleep
 import requests
+from connection import main
 
-#find roku on mac: ipconfig, arp -a, find name
-ROKU_IP_ADDRESS: str = "192.168.106.244"
 
+ROKU_IP_ADDRESS = main()
 roku = Roku(ROKU_IP_ADDRESS)
+
+
+
+#roku = Roku(ROKU_IP_ADDRESS)
 
 
 start: bool = False
@@ -196,6 +200,7 @@ def workaholics():
 def game_of_thrones():
     hbo_max_search()
 
+# ONLY SUPPORTED ON ROKU TVs
 def letter(x):
     requests.post(f"http://{ROKU_IP_ADDRESS}:8060/keypress/Lit_{x}")
 
