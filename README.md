@@ -100,4 +100,6 @@ TROUBLESHOOTING
 
 Try using a virtual environment to install dependencies and run the program.  
 
+The typing and volume features only work on Roku TVs.
+
 If your IP address is not valid, the GUI may not appear. Test running commands manually using functions in rokutests.py and viewing their output.
